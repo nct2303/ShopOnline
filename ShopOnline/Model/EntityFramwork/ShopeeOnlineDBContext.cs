@@ -5,10 +5,10 @@ using System.Linq;
 
 namespace Model.EntityFramwork
 {
-    public partial class ShopOnlineDBContext : DbContext
+    public partial class ShopeeOnlineDBContext : DbContext
     {
-        public ShopOnlineDBContext()
-            : base("name=ShopOnlineDBContext")
+        public ShopeeOnlineDBContext()
+            : base("name=ShopeeOnlineDBContext")
         {
         }
 
@@ -17,6 +17,7 @@ namespace Model.EntityFramwork
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<Product_> Product_ { get; set; }
+        public virtual DbSet<UserAdmin> UserAdmins { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -66,6 +67,26 @@ namespace Model.EntityFramwork
 
             modelBuilder.Entity<Product_>()
                 .Property(e => e.product_color)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<UserAdmin>()
+                .Property(e => e.id)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<UserAdmin>()
+                .Property(e => e.username)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<UserAdmin>()
+                .Property(e => e.password)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<UserAdmin>()
+                .Property(e => e.fullname)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<UserAdmin>()
+                .Property(e => e.email)
                 .IsUnicode(false);
         }
     }

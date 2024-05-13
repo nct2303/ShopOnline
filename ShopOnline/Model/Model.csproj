@@ -50,17 +50,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\User_DAO.cs" />
     <Compile Include="EntityFramwork\Category.cs" />
     <Compile Include="EntityFramwork\Customer.cs" />
     <Compile Include="EntityFramwork\Order.cs" />
     <Compile Include="EntityFramwork\OrderDetail.cs" />
     <Compile Include="EntityFramwork\Product_.cs" />
-    <Compile Include="EntityFramwork\ShopOnlineDBContext.cs" />
+    <Compile Include="EntityFramwork\ShopeeOnlineDBContext.cs" />
+    <Compile Include="EntityFramwork\UserAdmin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
