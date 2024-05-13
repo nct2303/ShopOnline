@@ -1,12 +1,157 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\views\\loginpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\views\\loginpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\controllers\\loginpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\controllers\\loginpagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\areas\\admin\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\areas\\admin\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\models\\loginpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\models\\loginpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\areas\\admin\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9395BEE0-89F8-4BE5-AFF3-109AE4A5E042}|Model\\Model.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\model\\dao\\user_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9395BEE0-89F8-4BE5-AFF3-109AE4A5E042}|Model\\Model.csproj|solutionrelative:model\\dao\\user_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9395BEE0-89F8-4BE5-AFF3-109AE4A5E042}|Model\\Model.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\model\\dao\\customer_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9395BEE0-89F8-4BE5-AFF3-109AE4A5E042}|Model\\Model.csproj|solutionrelative:model\\dao\\customer_dao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\commons\\customerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\commons\\customerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShopOnline\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "ShopOnline\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T18:47:58.711Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Views\\LoginPage\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShopOnline\\Views\\LoginPage\\Index.cshtml",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Views\\LoginPage\\Index.cshtml",
+              "RelativeToolTip": "ShopOnline\\Views\\LoginPage\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T18:45:55.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginPageModel.cs",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Models\\LoginPageModel.cs",
+              "RelativeDocumentMoniker": "ShopOnline\\Models\\LoginPageModel.cs",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Models\\LoginPageModel.cs",
+              "RelativeToolTip": "ShopOnline\\Models\\LoginPageModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T18:38:52.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerLogin.cs",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Commons\\CustomerLogin.cs",
+              "RelativeDocumentMoniker": "ShopOnline\\Commons\\CustomerLogin.cs",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Commons\\CustomerLogin.cs",
+              "RelativeToolTip": "ShopOnline\\Commons\\CustomerLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T18:31:44.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ShopOnline\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ShopOnline\\Areas\\Admin\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:37:09.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPageController.cs",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Controllers\\LoginPageController.cs",
+              "RelativeDocumentMoniker": "ShopOnline\\Controllers\\LoginPageController.cs",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Controllers\\LoginPageController.cs",
+              "RelativeToolTip": "ShopOnline\\Controllers\\LoginPageController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwB8AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:20:27.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Customer_DAO.cs",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\Model\\DAO\\Customer_DAO.cs",
+              "RelativeDocumentMoniker": "Model\\DAO\\Customer_DAO.cs",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\Model\\DAO\\Customer_DAO.cs",
+              "RelativeToolTip": "Model\\DAO\\Customer_DAO.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACcAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:25:02.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User_DAO.cs",
+              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\Model\\DAO\\User_DAO.cs",
+              "RelativeDocumentMoniker": "Model\\DAO\\User_DAO.cs",
+              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\Model\\DAO\\User_DAO.cs",
+              "RelativeToolTip": "Model\\DAO\\User_DAO.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAkwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T17:19:57.042Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
