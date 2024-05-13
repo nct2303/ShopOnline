@@ -22,12 +22,12 @@ namespace Model.DAO
         }
         public UserAdmin Update(UserAdmin user)
         {
-            var us = db.UserAdmins.FirstOrDefault(x = > x.id == user.id);
+            var us = db.UserAdmins.FirstOrDefault(x => x.id == user.id);
             us.username = user.username;
             us.password = user.password;
             us.fullname = user.fullname;
             us.email = user.email;
-            db.SaveChanges(us);
+            db.SaveChanges();
             return us;
         }
         public int Login(string username, string password)
