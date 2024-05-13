@@ -1,87 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\views\\loginpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\views\\loginpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\views\\signuppage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\views\\signuppage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|d:\\repo_shopeefake\\shopproject\\shoponline\\shoponline\\controllers\\signuppagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:shoponline\\controllers\\signuppagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Areas\\Admin\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B74E2D-8AB3-48EC-AE60-2040E865782B}|ShopOnline\\ShopOnline.csproj|solutionrelative:ShopOnline\\Areas\\Admin\\Controllers\\HomeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Views\\SignupPage\\Index.cshtml",
-              "RelativeDocumentMoniker": "ShopOnline\\Views\\SignupPage\\Index.cshtml",
-              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Views\\SignupPage\\Index.cshtml",
-              "RelativeToolTip": "ShopOnline\\Views\\SignupPage\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T13:36:45.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SignupPageController.cs",
-              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Controllers\\SignupPageController.cs",
-              "RelativeDocumentMoniker": "ShopOnline\\Controllers\\SignupPageController.cs",
-              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Controllers\\SignupPageController.cs",
-              "RelativeToolTip": "ShopOnline\\Controllers\\SignupPageController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T13:36:18.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Views\\LoginPage\\Index.cshtml",
-              "RelativeDocumentMoniker": "ShopOnline\\Views\\LoginPage\\Index.cshtml",
-              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Views\\LoginPage\\Index.cshtml",
-              "RelativeToolTip": "ShopOnline\\Views\\LoginPage\\Index.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T11:29:45.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "ShopOnline\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Repo_ShopeeFake\\ShopProject\\ShopOnline\\ShopOnline\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "ShopOnline\\Areas\\Admin\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T13:57:16.491Z"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

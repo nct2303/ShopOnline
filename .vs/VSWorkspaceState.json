@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ShopOnline",
+    "\\ShopOnline\\Model",
+    "\\ShopOnline\\Model\\DAO",
+    "\\ShopOnline\\ShopOnline",
+    "\\ShopOnline\\ShopOnline\\Areas",
+    "\\ShopOnline\\ShopOnline\\Areas\\Admin",
+    "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Controllers",
+    "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views",
+    "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views\\Login"
+  ],
+  "SelectedNode": "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views\\Login\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

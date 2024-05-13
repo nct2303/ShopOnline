@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Model.DAO
 {
-    internal class User_DAO
+    public class User_DAO
     {
         ShopeeOnlineDBContext db = null;
         public User_DAO()
@@ -22,17 +22,38 @@ namespace Model.DAO
         }
         public UserAdmin Update(UserAdmin user)
         {
-            var us = db.UserAdmins.FirstOrDefault(x => x.id == user.id);
-            us.username = user.username;
-            us.password = user.password;
-            us.fullname = user.fullname;
-            us.email = user.email;
+            var us = db.UserAdmins.FirstOrDefault(x => x.ID == user.ID);
+            us.UserName = user.UserName;
+            us.Password = user.Password;
+            us.FullName = user.FullName;
+            us.Email = user.Email;
             db.SaveChanges();
             return us;
         }
         public int Login(string username, string password)
         {
-            int count = db.UserAdmins.Where(x=> x.username == username && x.password == password).Count();
+            var user = db.UserAdmins.FirstOrDefault(x=> x.UserName == username);
+            if(user == null)
+            {
+                return -1;// user khong ton tai
+            }
+            else
+            {
+                if(user.Password == password)
+                {
+                    return 1;// dang nhap thanh cong
+                }
+                else
+                {
+                    return 0;// sai mat khau
+                }
+            }
         }
+
+        public UserAdmin getItem(string username)
+        {
+            return db.UserAdmins.FirstOrDefault(x => x.UserName == username);
+        }
+
     }
 }

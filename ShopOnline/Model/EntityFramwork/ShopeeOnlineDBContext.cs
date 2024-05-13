@@ -70,23 +70,23 @@ namespace Model.EntityFramwork
                 .IsUnicode(false);
 
             modelBuilder.Entity<UserAdmin>()
-                .Property(e => e.id)
+                .Property(e => e.ID)
                 .IsUnicode(false);
 
             modelBuilder.Entity<UserAdmin>()
-                .Property(e => e.username)
+                .Property(e => e.UserName)
                 .IsUnicode(false);
 
             modelBuilder.Entity<UserAdmin>()
-                .Property(e => e.password)
+                .Property(e => e.Password)
                 .IsUnicode(false);
 
             modelBuilder.Entity<UserAdmin>()
-                .Property(e => e.fullname)
+                .Property(e => e.FullName)
                 .IsUnicode(false);
 
             modelBuilder.Entity<UserAdmin>()
-                .Property(e => e.email)
+                .Property(e => e.Email)
                 .IsUnicode(false);
         }
     }

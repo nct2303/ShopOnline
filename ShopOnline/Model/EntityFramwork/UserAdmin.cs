@@ -10,18 +10,18 @@ namespace Model.EntityFramwork
     public partial class UserAdmin
     {
         [StringLength(50)]
-        public string id { get; set; }
+        public string ID { get; set; }
 
         [StringLength(50)]
-        public string username { get; set; }
+        public string UserName { get; set; }
 
         [StringLength(50)]
-        public string password { get; set; }
+        public string Password { get; set; }
 
         [StringLength(50)]
-        public string fullname { get; set; }
+        public string FullName { get; set; }
 
         [StringLength(50)]
-        public string email { get; set; }
+        public string Email { get; set; }
     }
 }
