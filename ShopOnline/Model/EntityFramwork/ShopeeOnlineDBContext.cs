@@ -16,7 +16,7 @@ namespace Model.EntityFramwork
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
-        public virtual DbSet<Product_> Product_ { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<UserAdmin> UserAdmins { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -57,17 +57,13 @@ namespace Model.EntityFramwork
                 .Property(e => e.orderdetail_price)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Product_>()
-                .Property(e => e.product_id)
+            modelBuilder.Entity<Product>()
+                .Property(e => e.Size)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Product_>()
-                .Property(e => e.product_size)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Product_>()
-                .Property(e => e.product_color)
-                .IsUnicode(false);
+            modelBuilder.Entity<Product>()
+                .Property(e => e.Price)
+                .HasPrecision(18, 0);
 
             modelBuilder.Entity<UserAdmin>()
                 .Property(e => e.ID)

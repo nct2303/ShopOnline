@@ -29,7 +29,8 @@ namespace ShopOnline.Controllers
                     session.customer_username = user.customer_username;
                     session.customer_password = user.customer_password;
                     Session.Add(TempFunc.USER_SESSION, session);
-                    return RedirectToAction("Index","Home");
+                    return RedirectToAction("Index", "Home");
+
                 }
                 else if(result == 0)
                 {

@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\ShopOnline",
-    "\\ShopOnline\\Model",
-    "\\ShopOnline\\Model\\DAO",
     "\\ShopOnline\\ShopOnline",
     "\\ShopOnline\\ShopOnline\\Areas",
     "\\ShopOnline\\ShopOnline\\Areas\\Admin",
-    "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Controllers",
     "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views",
-    "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views\\Login"
+    "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views\\Product",
+    "\\ShopOnline\\ShopOnline\\Controllers",
+    "\\ShopOnline\\ShopOnline\\Views",
+    "\\ShopOnline\\ShopOnline\\Views\\LoginPage"
   ],
-  "SelectedNode": "\\ShopOnline\\ShopOnline.sln",
+  "SelectedNode": "\\ShopOnline\\ShopOnline\\Areas\\Admin\\Views\\Product\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

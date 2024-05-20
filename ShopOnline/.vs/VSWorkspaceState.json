@@ -6,6 +6,7 @@
     "\\ShopOnline\\Areas\\Admin",
     "\\ShopOnline\\Areas\\Admin\\Views",
     "\\ShopOnline\\Areas\\Admin\\Views\\Login",
+    "\\ShopOnline\\Areas\\Admin\\Views\\Product",
     "\\ShopOnline\\Assets",
     "\\ShopOnline\\Assets\\Admin",
     "\\ShopOnline\\Assets\\Admin\\css"

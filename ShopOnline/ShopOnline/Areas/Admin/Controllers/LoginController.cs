@@ -32,7 +32,7 @@ namespace ShopOnline.Areas.Admin.Controllers
                     session.UserID = user.ID;
                     session.Fullname = user.FullName;
                     Session.Add(TempFunc.USER_SESSION, session);
-                    return RedirectToAction("Index","Home");
+                    return RedirectToAction("Index","AdminHome");
                 }
                 else if(result == 0) 
                 {
