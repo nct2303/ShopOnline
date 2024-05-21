@@ -1,9 +1,6 @@
 ﻿using Model.DAO;
 using Model.EntityFramwork;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace ShopOnline.Areas.Admin.Controllers
@@ -15,11 +12,13 @@ namespace ShopOnline.Areas.Admin.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public ActionResult Add()
         {
-            return View();        
+            return View();
         }
+
         [HttpPost]
         public ActionResult Add(Product product)
         {
@@ -27,16 +26,54 @@ namespace ShopOnline.Areas.Admin.Controllers
             {
                 var dao = new AddProDuct_DAO();
                 var pd = dao.Add(product);
-                if(pd != null)
+                if (pd != null)
                 {
-                    return RedirectToAction("Index", "Product");
+                    return RedirectToAction("Detail", "Product");
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Loi them san pham");
+                    ModelState.AddModelError("", "Lỗi thêm sản phẩm");
                 }
             }
             return View("Index");
         }
+        [HttpGet]
+        public ActionResult Delete(string id)
+        {
+            if (ModelState.IsValid)
+            {
+                var dao = new AddProDuct_DAO();
+                var pd = dao.GetProductById(id);
+                if (pd != null)
+                {
+                    var del = dao.Delete(pd.Id);
+                    if (del != null)
+                    {
+                        return RedirectToAction("Detail", "Product");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Lỗi xóa sản phẩm");
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Không tìm thấy sản phẩm");
+                }
+            }
+            return View("Index");
+        }
+        [HttpGet]
+        public ActionResult Detail()
+        {
+            var dao = new AddProDuct_DAO();
+            var product = dao.GetAllProducts();
+            if (product == null)
+            {
+                return HttpNotFound();
+            }
+            return View(product);
+        }
+
     }
 }

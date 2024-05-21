@@ -58,7 +58,7 @@ namespace Model.EntityFramwork
                 .IsUnicode(false);
 
             modelBuilder.Entity<Product>()
-                .Property(e => e.Size)
+                .Property(e => e.Id)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Product>()

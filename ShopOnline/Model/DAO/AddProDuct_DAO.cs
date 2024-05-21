@@ -31,10 +31,9 @@ namespace Model.DAO
                         Console.WriteLine($"Property: {validationError.PropertyName} Error: {validationError.ErrorMessage}");
                     }
                 }
-                throw;  // Tái ném ngoại lệ sau khi ghi log chi tiết lỗi
+                throw;
             }
         }
-
         public Product Update(Product product)
         {
             var pd = db.Products.FirstOrDefault(x=>x.Id == product.Id);
@@ -47,5 +46,21 @@ namespace Model.DAO
             db.SaveChanges();
             return pd;
         }
+        public Product Delete(string productId)
+        {
+            var pd = db.Products.FirstOrDefault(x => x.Id == productId);
+            db.Products.Remove(pd);
+            db.SaveChanges();
+            return pd;
+        }
+        public Product GetProductById(string productId)
+        {
+            return db.Products.FirstOrDefault(x => x.Id == productId);
+        }
+        public List<Product> GetAllProducts()
+        {
+            return db.Products.ToList();
+        }
+
     }
 }

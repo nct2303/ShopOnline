@@ -1,0 +1,28 @@
+﻿@model Model.EntityFramwork.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Xóa</h2>
+
+<h3>Bạn có chắc chắn muốn xóa điều này không?</h3>
+@using (Html.BeginForm("Delete", "Product", FormMethod.Post))
+{
+    @Html.AntiForgeryToken() <!-- Bao gồm mã thông báo chống giả mạo -->
+    <div>
+        <h4>Sản phẩm</h4>
+        <hr />
+        <div class="form-group">
+            @Html.Label("ID Sản phẩm", new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.Id, new { @class = "form-control" })
+        </div>
+
+        <div class="form-actions no-color">
+            <button type="submit" class="btn btn-danger">Xóa</button> <!-- Nút "Xóa" để xóa sản phẩm -->
+            | <!-- Liên kết được phân tách với "|" -->
+            @Html.ActionLink("Hủy", "Index", null, new { @class = "btn btn-default" }) <!-- Nút "Hủy" để quay lại danh sách sản phẩm -->
+        </div>
+    </div>
+}

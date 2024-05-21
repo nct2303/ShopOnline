@@ -20,6 +20,7 @@ namespace Model.DAO
             db.SaveChanges();
             return us;
         }
+
         public UserAdmin Update(UserAdmin user)
         {
             var us = db.UserAdmins.FirstOrDefault(x => x.ID == user.ID);
