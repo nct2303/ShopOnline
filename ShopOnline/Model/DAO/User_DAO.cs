@@ -56,6 +56,5 @@ namespace Model.DAO
         {
             return db.UserAdmins.FirstOrDefault(x => x.UserName == username);
         }
-
     }
 }

@@ -18,7 +18,7 @@ namespace Model.DAO
 
         public int Login(string username, string password)
         {
-            var user = db.Customers.FirstOrDefault(x=>x.customer_username == username);
+            var user = db.CustomerAccounts.FirstOrDefault(x=>x.customer_username == username);
             if(user == null)
             {
                 return -1;
@@ -35,9 +35,23 @@ namespace Model.DAO
                 }
             }
         }
-        public Customer getItem(string username)
+        public CustomerAccount getItem(string username)
         {
-            return db.Customers.FirstOrDefault(x=> x.customer_username == username);
+            return db.CustomerAccounts.FirstOrDefault(x=> x.customer_username == username);
+        }
+        public CustomerAccount Update(CustomerAccount customer)
+        {
+            var us = db.CustomerAccounts.FirstOrDefault(x=> x.customer_id == customer.customer_id);
+            us.customer_username = customer.customer_username;
+            us.customer_password = customer.customer_password;
+            db.SaveChanges();
+            return us;
+        }
+        public CustomerAccount Add(CustomerAccount customer)
+        {
+            db.CustomerAccounts.Add(customer);
+            db.SaveChanges();
+            return customer;
         }
     }
 }

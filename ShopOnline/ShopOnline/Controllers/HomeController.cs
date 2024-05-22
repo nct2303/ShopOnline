@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Model.EntityFramwork;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +13,5 @@ namespace ShopOnline.Controllers
         {
             return View();
         }
-
-        
     }
 }

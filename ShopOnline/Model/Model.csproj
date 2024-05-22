@@ -52,14 +52,16 @@
   <ItemGroup>
     <Compile Include="DAO\AddProDuct_DAO.cs" />
     <Compile Include="DAO\Customer_DAO.cs" />
-    <Compile Include="DAO\Register_DAO.cs" />
+    <Compile Include="DAO\Statictis_DAO.cs" />
     <Compile Include="DAO\User_DAO.cs" />
     <Compile Include="EntityFramwork\Category.cs" />
     <Compile Include="EntityFramwork\Customer.cs" />
+    <Compile Include="EntityFramwork\CustomerAccount.cs" />
     <Compile Include="EntityFramwork\Order.cs" />
     <Compile Include="EntityFramwork\OrderDetail.cs" />
     <Compile Include="EntityFramwork\Product.cs" />
     <Compile Include="EntityFramwork\ShopeeOnlineDBContext.cs" />
+    <Compile Include="EntityFramwork\Statistic.cs" />
     <Compile Include="EntityFramwork\UserAdmin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

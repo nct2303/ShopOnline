@@ -14,9 +14,11 @@ namespace Model.EntityFramwork
 
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<CustomerAccount> CustomerAccounts { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Statistic> Statistics { get; set; }
         public virtual DbSet<UserAdmin> UserAdmins { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -64,6 +66,10 @@ namespace Model.EntityFramwork
             modelBuilder.Entity<Product>()
                 .Property(e => e.Price)
                 .HasPrecision(18, 0);
+
+            modelBuilder.Entity<Statistic>()
+                .Property(e => e.Id)
+                .IsFixedLength();
 
             modelBuilder.Entity<UserAdmin>()
                 .Property(e => e.ID)

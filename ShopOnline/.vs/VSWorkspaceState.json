@@ -4,12 +4,13 @@
     "\\ShopOnline",
     "\\ShopOnline\\Areas",
     "\\ShopOnline\\Areas\\Admin",
-    "\\ShopOnline\\Areas\\Admin\\Controllers",
     "\\ShopOnline\\Areas\\Admin\\Views",
     "\\ShopOnline\\Areas\\Admin\\Views\\Product",
     "\\ShopOnline\\Assets",
     "\\ShopOnline\\Assets\\Admin",
-    "\\ShopOnline\\Assets\\Admin\\css"
+    "\\ShopOnline\\Assets\\Admin\\css",
+    "\\ShopOnline\\Views",
+    "\\ShopOnline\\Views\\LoginPage"
   ],
   "SelectedNode": "\\ShopOnline.sln",
   "PreviewInSolutionExplorer": false

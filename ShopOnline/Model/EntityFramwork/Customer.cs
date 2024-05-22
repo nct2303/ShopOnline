@@ -13,13 +13,6 @@ namespace Model.EntityFramwork
         [StringLength(20)]
         public string customer_id { get; set; }
 
-        [Required]
-        [StringLength(50)]
-        public string customer_username { get; set; }
-
-        [StringLength(50)]
-        public string customer_password { get; set; }
-
         [StringLength(50)]
         public string customer_name { get; set; }
 
