@@ -1,4 +1,4 @@
-namespace Model.EntityFramwork
+﻿namespace Model.EntityFramwork
 {
     using System;
     using System.Collections.Generic;
@@ -27,6 +27,8 @@ namespace Model.EntityFramwork
         public decimal? Price { get; set; }
 
         [StringLength(250)]
+        
         public string Image { get; set; }
     }
+
 }

@@ -6,9 +6,11 @@
     "\\ShopOnline\\Areas\\Admin",
     "\\ShopOnline\\Areas\\Admin\\Views",
     "\\ShopOnline\\Areas\\Admin\\Views\\Product",
+    "\\ShopOnline\\Controllers",
     "\\ShopOnline\\Views",
     "\\ShopOnline\\Views\\Home",
     "\\ShopOnline\\Views\\LoginPage",
+    "\\ShopOnline\\Views\\ProductDetail",
     "\\ShopOnline\\Views\\ShopPage"
   ],
   "SelectedNode": "\\ShopOnline.sln",

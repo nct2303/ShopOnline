@@ -1,12 +1,15 @@
 ﻿using Model.DAO;
 using Model.EntityFramwork;
+using System.IO;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
 namespace ShopOnline.Areas.Admin.Controllers
 {
     public class ProductController : Controller
     {
+        ShopeeOnlineDBContext db = new ShopeeOnlineDBContext();
         // GET: Admin/Product
         public ActionResult Index()
         {
@@ -20,25 +23,28 @@ namespace ShopOnline.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(Product product)
+        public ActionResult Add(Product product, HttpPostedFileBase imageFile)
         {
             if (ModelState.IsValid)
             {
-                var dao = new AddProDuct_DAO();
-                var statisticDao = new Statictis_DAO();
-                var pd = dao.Add(product);
-                if (pd != null)
+                if (imageFile != null && imageFile.ContentLength > 0)
                 {
-                    //statisticDao.UpdateStatistics("Add");
-                    return RedirectToAction("Detail", "Product");
+                    var fileName = Path.GetFileName(imageFile.FileName);
+                    var path = Path.Combine(Server.MapPath("~/Assets/Image/"), fileName);
+                    imageFile.SaveAs(path);
+                    product.Image = "~/Assets/Image/" + fileName; // Lưu đường dẫn của hình ảnh trong cơ sở dữ liệu
                 }
-                else
-                {
-                    ModelState.AddModelError("", "Lỗi thêm sản phẩm");
-                }
+
+                // Lưu thông tin sản phẩm vào cơ sở dữ liệu
+                db.Products.Add(product);
+                db.SaveChanges();
+
+                return RedirectToAction("Index");
             }
-            return View("Index");
+
+            return View(product);
         }
+
         [HttpGet]
         public ActionResult Delete(string id)
         {
