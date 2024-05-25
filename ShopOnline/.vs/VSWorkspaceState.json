@@ -6,11 +6,10 @@
     "\\ShopOnline\\Areas\\Admin",
     "\\ShopOnline\\Areas\\Admin\\Views",
     "\\ShopOnline\\Areas\\Admin\\Views\\Product",
-    "\\ShopOnline\\Assets",
-    "\\ShopOnline\\Assets\\Admin",
-    "\\ShopOnline\\Assets\\Admin\\css",
     "\\ShopOnline\\Views",
-    "\\ShopOnline\\Views\\LoginPage"
+    "\\ShopOnline\\Views\\Home",
+    "\\ShopOnline\\Views\\LoginPage",
+    "\\ShopOnline\\Views\\ShopPage"
   ],
   "SelectedNode": "\\ShopOnline.sln",
   "PreviewInSolutionExplorer": false

@@ -20,5 +20,14 @@ namespace ShopOnline.Controllers
             var product = db.Products.ToList();
             return View(product);
         }
+        public ActionResult Search(string keyword)
+        {
+            // Tìm kiếm sản phẩm dựa trên từ khóa
+            var products = db.Products.Where(p => p.Name.Contains(keyword)).ToList();
+
+            // Trả về view kết quả tìm kiếm với model là danh sách sản phẩm tìm được
+            return View(products);
+        }
+
     }
 }

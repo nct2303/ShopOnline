@@ -150,6 +150,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CustomerController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
@@ -159,6 +160,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginPageController.cs" />
+    <Compile Include="Controllers\ProductDetailController.cs" />
     <Compile Include="Controllers\ShopPageController.cs" />
     <Compile Include="Controllers\SignupPageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -317,6 +319,7 @@
     <Content Include="Assets\client\scss\bootstrap\scss\_type.scss" />
     <Content Include="Assets\client\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="Assets\client\scss\bootstrap\scss\_variables.scss" />
+    <Content Include="Areas\Admin\Views\Customer\Detail.cshtml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -344,9 +347,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\LoginPage\Index.cshtml" />
     <Content Include="Views\SignUpPage\Index.cshtml" />
-    <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Add.cshtml" />
     <Content Include="Views\ShopPage\Index.cshtml" />
+    <Content Include="Views\ProductDetail\Index.cshtml" />
+    <Content Include="Views\ShopPage\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

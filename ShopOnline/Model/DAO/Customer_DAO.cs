@@ -53,5 +53,21 @@ namespace Model.DAO
             db.SaveChanges();
             return customer;
         }
+        public List<Customer> getAllCustomer()
+        {
+            return db.Customers.ToList();
+        }
+        public Customer getCustomerById(string id)
+        {
+            return db.Customers.FirstOrDefault(x=> x.customer_id == id);
+        }
+
+        public Customer Delete(string customerId)
+        {
+            var pd = db.Customers.FirstOrDefault(x => x.customer_id == customerId );
+            db.Customers.Remove(pd);
+            db.SaveChanges();
+            return pd;
+        }
     }
 }
