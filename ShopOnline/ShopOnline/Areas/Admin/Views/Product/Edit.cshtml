@@ -19,10 +19,10 @@
                     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
                     <div class="form-group row my-2">
-                        @Html.LabelFor(model => model.Id, new { @class = "col-md-2 col-form-label" })
+                        @Html.LabelFor(model => model.product_id, new { @class = "col-md-2 col-form-label" })
                         <div class="col-md-8">
-                            @Html.TextBoxFor(model => model.Id, new { @class = "form-control" })
-                            @Html.ValidationMessageFor(model => model.Id, "", new { @class = "text-danger" })
+                            @Html.TextBoxFor(model => model.product_id, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.product_id, "", new { @class = "text-danger" })
                         </div>
                     </div>
 
@@ -65,7 +65,20 @@
                             @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
                         </div>
                     </div>
-
+                    <div class="form-group row my-2">
+                        @Html.LabelFor(model => model.Quanlity, new { @class = "col-md-2 col-form-label" })
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(model => model.Quanlity, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.Quanlity, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group row my-2">
+                        @Html.LabelFor(model => model.cate_name, new { @class = "col-md-2 col-form-label" })
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(model => model.cate_name, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.cate_name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
                     <div class="form-group row my-2">
                         @Html.LabelFor(model => model.Image, new { @class = "col-md-2 col-form-label" })
                         <div class="col-md-8">

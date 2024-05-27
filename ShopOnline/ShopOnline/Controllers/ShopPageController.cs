@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Web;
 using System.Web.SessionState;
 
 namespace ShopOnline.Controllers
@@ -22,9 +21,9 @@ namespace ShopOnline.Controllers
             var product = db.Products.ToList();
             return View(product);
         }
-        public Product GetProductById(string productId)
+        public Product GetProductById(int productId)
         {
-            return db.Products.FirstOrDefault(x => x.Id == productId);
+            return db.Products.FirstOrDefault(x => x.product_id == productId);
         }
         public ActionResult Search(string keyword)
         {
@@ -49,7 +48,7 @@ namespace ShopOnline.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddToCart(string id)
+        public ActionResult AddToCart(int id)
         {
             var product = GetProductById(id);
             if (product != null)
@@ -62,12 +61,12 @@ namespace ShopOnline.Controllers
             return RedirectToAction("Index");
         }
         [HttpPost]
-        public ActionResult RemoveFromCart(string id)
+        public ActionResult RemoveFromCart(int id)
         {
             var cart = Session["Cart"] as List<Product>;
             if (cart != null)
             {
-                var product = cart.FirstOrDefault(p => p.Id == id);
+                var product = cart.FirstOrDefault(p => p.product_id == id);
                 if (product != null)
                 {
                     cart.Remove(product);

@@ -1,4 +1,9 @@
-﻿@{
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model IEnumerable<Model.EntityFramwork.Product>
@@ -41,15 +46,13 @@
             <li class="breadcrumb-item active text-white">Shop</li>
         </ol>
     </div>
-    <!-- Single Page Header End -->
-    <!-- Display notification if available -->
-    @if (TempData["CartMessage"] != null)
+    @if (TempData["success"] != null)
     {
         <div class="alert alert-success text-center">
-            @TempData["CartMessage"]
+            @TempData["success"]
         </div>
     }
-
+    <!-- Single Page Header End -->
     <!-- Fruits Shop Start-->
     <div class="container-fluid fruite py-5">
         <div class="container py-5">
@@ -87,37 +90,10 @@
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            <div class="row g-4 justify-content-center">
-                                @foreach (var product in Model)
-                                {
-                                    <div class="col-md-6 col-lg-6 col-xl-4">
-                                        <div class="rounded position-relative fruite-item">
-                                            <div class="fruite-img">
-                                                <a href="@Url.Action("Index", "ProductDetail", new { id = product.product_id })">
-                                                    <img src="~/Assets/Image/@product.Image" class="img-fluid w-100 rounded-top" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">News</div>
-                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                <h4>@product.Name</h4>
-                                                <p>@product.Description</p>
-                                                <div class="d-flex justify-content-between flex-lg-wrap">
-                                                    <p class="text-dark fs-5 fw-bold mb-0">@product.Price VND</p>  
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                }
-                                <div class="col-12">
-                                    <div class="pagination d-flex justify-content-center mt-5">
-                                        <a href="#" class="rounded">&laquo;</a>
-                                        <a href="#" class="active rounded">1</a>
-                                        <a href="#" class="rounded">2</a>
-                                        <a href="#" class="rounded">3</a>
-                                        <a href="#" class="rounded">4</a>
-                                        <a href="#" class="rounded">5</a>
-                                        <a href="#" class="rounded">6</a>
-                                        <a href="#" class="rounded">&raquo;</a>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <p>Nhấn vào <a href="https://localhost:44353/Home/Index" class="btn btn-link">ĐÂY</a> để quay lại</p>
                                     </div>
                                 </div>
                             </div>

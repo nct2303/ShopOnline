@@ -39,14 +39,14 @@ namespace ShopOnline.Areas.Admin.Controllers
                 db.Products.Add(product);
                 db.SaveChanges();
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Detail","Product");
             }
 
             return View(product);
         }
 
         [HttpGet]
-        public ActionResult Delete(string id)
+        public ActionResult Delete(int id)
         {
             if (ModelState.IsValid)
             {
@@ -55,7 +55,7 @@ namespace ShopOnline.Areas.Admin.Controllers
                 var pd = dao.GetProductById(id);
                 if (pd != null)
                 {
-                    var del = dao.Delete(pd.Id);
+                    var del = dao.Delete(pd.product_id);
                     if (del != null)
                     {
 
@@ -93,7 +93,7 @@ namespace ShopOnline.Areas.Admin.Controllers
             return View(statistics);
         }*/
         [HttpGet]
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int id)
         {
             var dao = new AddProDuct_DAO();
             return View(dao.GetProductById(id));
@@ -111,7 +111,6 @@ namespace ShopOnline.Areas.Admin.Controllers
             {
                 return HttpNotFound("Khong tim thay");
             }
-            return View("Index");
         }
         public ActionResult DetailsProduct()
         {

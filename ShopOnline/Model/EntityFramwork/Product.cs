@@ -1,4 +1,4 @@
-﻿namespace Model.EntityFramwork
+namespace Model.EntityFramwork
 {
     using System;
     using System.Collections.Generic;
@@ -9,8 +9,8 @@
     [Table("Product")]
     public partial class Product
     {
-        [StringLength(50)]
-        public string Id { get; set; }
+        [Key]
+        public int product_id { get; set; }
 
         [StringLength(250)]
         public string Name { get; set; }
@@ -24,11 +24,13 @@
         [StringLength(250)]
         public string Description { get; set; }
 
+        public int? Quanlity { get; set; }
+
         public decimal? Price { get; set; }
 
-        [StringLength(250)]
-        
+        [StringLength(50)]
+        public string cate_name { get; set; }
+
         public string Image { get; set; }
     }
-
 }

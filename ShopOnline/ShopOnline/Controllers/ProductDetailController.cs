@@ -15,18 +15,18 @@ namespace ShopOnline.Controllers
         {
             db = new ShopeeOnlineDBContext();
         }
-        public Product GetProductById(string productId)
+        public Product GetProductById(int productId)
         {
-            return db.Products.FirstOrDefault(x => x.Id == productId);
+            return db.Products.FirstOrDefault(x => x.product_id == productId);
         }
-        public ActionResult Index(string id)
+        public ActionResult Index(int id)
         {
             var product = GetProductById(id);
             return View(product);
         }
 
         [HttpPost]
-        public ActionResult AddToCart(string id)
+        public ActionResult AddToCart(int id)
         {
             var product = GetProductById(id); // Thay thế bằng phương thức để lấy sản phẩm từ cơ sở dữ liệu
             if (product != null)

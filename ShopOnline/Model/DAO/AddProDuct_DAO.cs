@@ -34,16 +34,16 @@ namespace Model.DAO
                 throw;
             }
         }
-        public Product Delete(string productId)
+        public Product Delete(int productId)
         {
-            var pd = db.Products.FirstOrDefault(x => x.Id == productId);
+            var pd = db.Products.FirstOrDefault(x => x.product_id == productId);
             db.Products.Remove(pd);
             db.SaveChanges();
             return pd;
         }
-        public Product GetProductById(string productId)
+        public Product GetProductById(int productId)
         {
-            return db.Products.FirstOrDefault(x => x.Id == productId);
+            return db.Products.FirstOrDefault(x => x.product_id == productId);
         }
         public List<Product> GetAllProducts()
         {
@@ -51,7 +51,7 @@ namespace Model.DAO
         }
         public Product Update(Product product)
         {
-            var pd = db.Products.FirstOrDefault(x => x.Id == product.Id);
+            var pd = db.Products.FirstOrDefault(x => x.product_id == product.product_id);
             pd.Name = product.Name;
             pd.Size = product.Size;
             pd.Color = product.Color;

@@ -35,18 +35,6 @@ namespace Model.EntityFramwork
                 .Property(e => e.customer_phone)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<Order>()
-                .Property(e => e.order_id)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Order>()
-                .Property(e => e.customer_id)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<OrderDetail>()
-                .Property(e => e.order_id)
-                .IsUnicode(false);
-
             modelBuilder.Entity<OrderDetail>()
                 .Property(e => e.product_id)
                 .IsUnicode(false);
@@ -58,14 +46,6 @@ namespace Model.EntityFramwork
             modelBuilder.Entity<OrderDetail>()
                 .Property(e => e.orderdetail_price)
                 .IsUnicode(false);
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.Id)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.Price)
-                .HasPrecision(18, 0);
 
             modelBuilder.Entity<Statistic>()
                 .Property(e => e.Id)

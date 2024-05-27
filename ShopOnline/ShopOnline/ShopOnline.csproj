@@ -185,6 +185,7 @@
     <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\CustomerController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OrderAdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Commons\CustomerLogin.cs" />
@@ -193,6 +194,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginPageController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ProductDetailController.cs" />
     <Compile Include="Controllers\ShopPageController.cs" />
     <Compile Include="Controllers\SignupPageController.cs" />
@@ -244,6 +246,7 @@
     <Content Include="Assets\Image\img3.jpg" />
     <Content Include="Assets\Image\img4.jpg" />
     <Content Include="Assets\Image\img5.jpg" />
+    <Content Include="Assets\Image\img7.jpg" />
     <Content Include="Assets\Image\khoi-nghiep-voi-thoi-trang.png" />
     <Content Include="Assets\Image\Logo_dhktdn.png" />
     <Content Include="Assets\Image\vn-11134207-7r98o-lkq5qg46h3nk7a.jpg" />
@@ -268,7 +271,6 @@
     <Content Include="Areas\Admin\Views\Product\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Detail.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Product\DetailsProduct.cshtml" />
     <Content Include="Assets\client\lib\owlcarousel\LICENSE" />
     <Content Include="Assets\client\lib\waypoints\links.php" />
     <Content Include="Assets\client\scss\bootstrap.scss" />
@@ -354,6 +356,8 @@
     <Content Include="Assets\client\scss\bootstrap\scss\_utilities.scss" />
     <Content Include="Assets\client\scss\bootstrap\scss\_variables.scss" />
     <Content Include="Areas\Admin\Views\Customer\Detail.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderAdmin\Detail.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderAdmin\DetailOrder.cshtml" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -378,14 +382,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\LoginPage\Index.cshtml" />
     <Content Include="Views\SignUpPage\Index.cshtml" />
     <Content Include="Views\ShopPage\Index.cshtml" />
     <Content Include="Views\ProductDetail\Index.cshtml" />
     <Content Include="Views\ShopPage\Search.cshtml" />
-    <Content Include="Views\ShopPage\Cart.cshtml" />
     <Content Include="Views\ShopPage\NothingPage.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\ShopPage\Cart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

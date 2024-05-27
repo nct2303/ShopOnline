@@ -44,6 +44,12 @@
             <li class="breadcrumb-item active text-white">Shop</li>
         </ol>
     </div>
+    @if (TempData["error"] != null)
+    {
+        <div class="alert alert-success text-center">
+            @TempData["error"]
+        </div>
+    }
     <!-- Single Page Header End -->
     <!-- Cart Page Start -->
     <div class="container-fluid py-5">
@@ -82,7 +88,7 @@
                                                 <i class="fa fa-minus"></i>
                                             </button>
                                         </div>
-                                        <input type="text" class="form-control form-control-sm text-center border-0 quantity-input" value="1">
+                                        <input type="text" class="form-control form-control-sm text-center border-0 quantity-input" name="quantity_@product.product_id" value="1" id="quantityInput">
                                         <div class="input-group-btn">
                                             <button class="btn btn-sm btn-plus rounded-circle bg-light border">
                                                 <i class="fa fa-plus"></i>
@@ -94,16 +100,16 @@
                                     <p class="mb-0 mt-4 total-price">@product.Price VND</p>
                                 </td>
                                 <td>
-                                    <form action="@Url.Action("RemoveFromCart", "ShopPage")" method="post">
-                                        <input type="hidden" name="id" value="@product.Id" />
-                                        <button type="submit" class="btn btn-md rounded-circle bg-light border mt-4">
+                                    <form action="@Url.Action("Delete", "Order")" method="post">
+                                        <button class="btn btn-md rounded-circle bg-light border mt-4">
                                             <i class="fa fa-times text-danger"></i>
                                         </button>
                                     </form>
-                                </td>
+                                </td>   
                             </tr>
                         }
                     </tbody>
+
                 </table>
             </div>
             <div class="row g-4 justify-content-end">
@@ -128,7 +134,9 @@
                             <h5 class="mb-0 ps-4 me-4">Total</h5>
                             <p class="mb-0 pe-4" id="cart-total">@Model.Sum(p => p.Price) VND</p>
                         </div>
-                        <button class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" type="button">Proceed Checkout</button>
+                        <form id="checkout-form" action="@Url.Action("Checkout", "Order")" method="post" onsubmit="updateQuantity()">
+                            <button type="submit" class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4">Checkout</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -148,6 +156,17 @@
 
     <!-- Custom Javascript for Cart -->
     <script>
+        function updateQuantity() {
+            document.querySelectorAll('.quantity-input').forEach(input => {
+                let productId = input.name.split('_')[1];
+                let quantity = input.value;
+                let inputElement = document.createElement('input');
+                inputElement.type = 'hidden';
+                inputElement.name = 'quantity_' + productId;
+                inputElement.value = quantity;
+                document.querySelector('form#checkout-form').appendChild(inputElement);
+            });
+        }
         document.addEventListener('DOMContentLoaded', (event) => {
             const updateTotal = () => {
                 let total = 0;
@@ -166,7 +185,7 @@
                 button.addEventListener('click', (event) => {
                     const input = event.target.closest('.input-group').querySelector('.quantity-input');
                     const currentValue = parseInt(input.value);
-                    if (currentValue > -1 ) {
+                    if (currentValue > -1) {
                         input.value = currentValue;
                         updateTotal();
                     }

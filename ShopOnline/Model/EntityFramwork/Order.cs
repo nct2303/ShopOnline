@@ -10,18 +10,14 @@ namespace Model.EntityFramwork
     public partial class Order
     {
         [Key]
-        [Column(Order = 0)]
-        [StringLength(20)]
-        public string order_id { get; set; }
+        public int order_id { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [StringLength(20)]
-        public string customer_id { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string customer_username { get; set; }
 
-        public DateTime? order_date { get; set; }
+        public DateTime? CreateDate { get; set; }
 
-        [StringLength(30)]
-        public string order_total { get; set; }
+        public int? Status { get; set; }
     }
 }

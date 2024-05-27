@@ -11,7 +11,7 @@ namespace Model.EntityFramwork
     {
         [Key]
         [Column(Order = 0)]
-        [StringLength(20)]
+        [StringLength(50)]
         public string order_id { get; set; }
 
         [Key]

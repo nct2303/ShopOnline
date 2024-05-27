@@ -59,32 +59,26 @@
                         </div>
                         <div class="col-lg-6">
                             <h4 class="fw-bold mb-3">@Model.Name</h4>
-                            <p class="mb-3">Category: </p>
+                            <p class="mb-3">Category: @Model.cate_name</p>
                             <h5 class="fw-bold mb-3">Size: @Model.Size</h5>
                             <h5 class="fw-bold mb-3">Color: @Model.Color</h5>
                             <p class="mb-3">Description: @Model.Description</p>
-                            <div class="d-flex mb-4">
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
                             <div class="input-group quantity mb-5" style="width: 100px;">
                                 <div class="input-group-btn">
                                     <button class="btn btn-sm btn-minus rounded-circle bg-light border">
                                         <i class="fa fa-minus"></i>
                                     </button>
                                 </div>
-                                <input type="text" class="form-control form-control-sm text-center border-0" value="1">
+                                <input type="text" class="form-control form-control-sm text-center border-0" value="@Model.Quanlity" id="quantityInput">
                                 <div class="input-group-btn">
                                     <button class="btn btn-sm btn-plus rounded-circle bg-light border">
                                         <i class="fa fa-plus"></i>
                                     </button>
                                 </div>
                             </div>
+                            <h5 class="fw-bold mb-3">@Model.Price VND</h5>
                             <form action="@Url.Action("AddToCart", "ProductDetail")" method="post">
-                                <input type="hidden" name="id" value="@Model.Id" />
+                                <input type="hidden" name="id" value="@Model.product_id" />
                                 <button type="submit" class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
                                     <i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart
                                 </button>
@@ -118,19 +112,6 @@
                                 <div class="tab-pane" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
                                     <div class="d-flex">
                                         <img src="~/img/avatar.jpg" class="img-fluid rounded-circle p-3" style="width: 100px; height: 100px;" alt="">
-                                        <div>
-                                            <p class="mb-2" style="font-size: 14px;">April 12, 2024</p>
-                                            <div class="d-flex justify-content-between">
-                                                <h5>Jason Smith</h5>
-                                                <div class="d-flex mb-3">
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star text-secondary"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -155,16 +136,6 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="d-flex justify-content-between py-3 mb-5">
-                                        <div class="d-flex align-items-center">
-                                            <p class="mb-0 me-3">Please rate:</p>
-                                            <div class="d-flex align-items-center" style="font-size: 12px;">
-                                                <i class="fa fa-star text-muted"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
                                         <a href="#" class="btn border border-secondary text-primary rounded-pill px-4 py-3">Post Comment</a>
                                     </div>
                                 </div>
@@ -196,5 +167,17 @@
 
     <!-- Template Javascript -->
     <script src="~/Assets/client/js/main.js"></script>
+    <script>
+        const quantityInput = document.getElementById('quantityInput');
+        const addToCartButton = document.querySelector('.btn-add-to-cart');
+
+        addToCartButton.addEventListener('click', () => {
+            const currentQuantity = parseInt(quantityInput.value);
+            // Lưu giá trị currentQuantity vào trang giỏ hàng (cách lưu có thể tùy thuộc vào cách bạn xây dựng trang giỏ hàng)
+            console.log(`Giá trị quantity: ${currentQuantity}`);
+            // Thực hiện các hành động khác liên quan đến giỏ hàng
+        });
+    </script>
+
 </body>
 </html>
